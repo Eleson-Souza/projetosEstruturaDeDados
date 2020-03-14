@@ -65,25 +65,10 @@ int main()
 				
 				printf("\n");
 			}
-			/*double total = 0, salg, doc;
-			for(l = 0; l < 15; l++)
-			{
-				doc = faturamento[l][0] * 7.5;
-				salg = faturamento[l][1] * 5.0;
-   			    printf("%i %i %f %i %f", 
-				   (l+1), 
-				   faturamento[l][0],
-				   doc,
-   				   faturamento[l][1],
-                   salg);
-
-				printf("\n");
-			}
-		}
+	    }
 		else if (opcao == 0)
 		{
 			break;
-		}*/
-	    }	
+		}	
 	}
 }
