@@ -1,0 +1,16 @@
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.exe
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.deps.json
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.runtimeconfig.json
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.runtimeconfig.dev.json
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.dll
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.pdb
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.csprojAssemblyReference.cache
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.AssemblyInfoInputs.cache
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.AssemblyInfo.cs
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.dll
+C:\Users\Eleson\source\repos\SistemaVendasMVC\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.pdb
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.csprojAssemblyReference.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.AssemblyInfoInputs.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.AssemblyInfo.cs
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.dll
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.pdb
