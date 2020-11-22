@@ -79,7 +79,8 @@ namespace SistemaVendasMVC
         public double valorComissao()
         {
             double valorVendas = this.valorVendas();
-            return (valorVendas * (percComissao / 100));
+            double valorComissao = Math.Round((valorVendas * (percComissao / 100)), 2);
+            return valorComissao;
         }
     }
 }
