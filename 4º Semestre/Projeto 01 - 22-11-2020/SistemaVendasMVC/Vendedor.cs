@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace SistemaVendasMVC
 {
@@ -81,6 +82,15 @@ namespace SistemaVendasMVC
             double valorVendas = this.valorVendas();
             double valorComissao = Math.Round((valorVendas * (percComissao / 100)), 2);
             return valorComissao;
+        }
+
+        public double ValorMedioDiario()
+        {
+            // verifica a quantidade de vendas foram realizadas.
+            int quantVendas = this.asVendas.Where(venda => (venda != null)).Count();
+
+            double valorMedio = (this.valorVendas()) / quantVendas;
+            return Math.Round(valorMedio, 2);
         }
     }
 }

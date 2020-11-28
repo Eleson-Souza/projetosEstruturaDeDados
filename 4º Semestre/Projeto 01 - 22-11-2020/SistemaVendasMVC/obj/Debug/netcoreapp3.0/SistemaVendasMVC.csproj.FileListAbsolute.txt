@@ -25,3 +25,5 @@ C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutur
 C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 01 - 22-11-2020\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.runtimeconfig.dev.json
 C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 01 - 22-11-2020\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.dll
 C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 01 - 22-11-2020\SistemaVendasMVC\bin\Debug\netcoreapp3.0\SistemaVendasMVC.pdb
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.csproj.CoreCompileInputs.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 01 - 22-11-2020\SistemaVendasMVC\obj\Debug\netcoreapp3.0\SistemaVendasMVC.genruntimeconfig.cache

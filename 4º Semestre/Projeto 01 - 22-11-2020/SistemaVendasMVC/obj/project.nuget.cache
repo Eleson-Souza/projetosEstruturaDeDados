@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6dwkhRXk8dz+F9Al32fFW5aKEBjeyBLwf5XNKzugIaV9VItBE9rjLouI4KDCypTWc4Xn5aYguBqeZ0EB8gI9NA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Eleson\\Google Drive\\Faculdade ADS - IFSP Cubatão\\3º Semestre\\Estrutura de Dados I\\Projetos GitHub\\4º Semestre\\Projeto 01 - 22-11-2020\\SistemaVendasMVC\\SistemaVendasMVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eleson\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Eleson\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Eleson\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Eleson\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

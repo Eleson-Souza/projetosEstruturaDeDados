@@ -45,11 +45,12 @@ namespace SistemaVendasMVC
             {
                 foreach(Vendedor ven in this.osVendedores)
                 {
-                    if(ven != null && ven.Id == v.Id)
+                    if (ven != null && ven.Id == v.Id)
                     {
                         // antes de excluir, verifica se o array de vendas do vendedor encontrado está nulo/vazio.
-                        for(int i=0; i<ven.AsVendas.Length; i++)
+                        for (int i = 0; i < ven.AsVendas.Length; i++)
                         {
+                            // se existirem conteudos no array...
                             if (ven.AsVendas[i] != null)
                                 contVendas++;
                         }
@@ -63,6 +64,8 @@ namespace SistemaVendasMVC
                         else
                             podeDeletar = false;
                     }
+                    else
+                        podeDeletar = false;
                 }
             }
 
@@ -86,15 +89,21 @@ namespace SistemaVendasMVC
         public double valorVendas()
         {
             double valorTotalVendas = 0;
-            foreach(Vendedor vendedor in osVendedores)
+            foreach (Vendedor vendedor in this.osVendedores)
             {
-                foreach(Venda venda in vendedor.AsVendas)
+                // se o elemento do array de vendedores obtiver dados... percorrerá suas vendas mensais.
+                if(vendedor != null)
                 {
-                    valorTotalVendas += venda.Valor;
+                    foreach (Venda venda in vendedor.AsVendas)
+                    {
+                        // se o elemento do array de vendas obtiver dados...  fará a totalização de suas vendas mensais.
+                        if (venda != null)
+                            valorTotalVendas += venda.Valor;
+                    }
                 }
             }
 
-            return valorTotalVendas;
+            return Math.Round(valorTotalVendas, 2);
         }
 
         public double valorComissao()
@@ -102,13 +111,17 @@ namespace SistemaVendasMVC
             double valorTotalComissao = 0;
             foreach(Vendedor vendedor in osVendedores)
             {
-                foreach (Venda venda in vendedor.AsVendas)
+                if(vendedor != null)
                 {
-                    valorTotalComissao += (venda.Valor * (vendedor.PercComissao / 100));
+                    foreach (Venda venda in vendedor.AsVendas)
+                    {
+                        if (venda != null)
+                            valorTotalComissao += (venda.Valor * (vendedor.PercComissao / 100));
+                    }
                 }
             }
 
-            return valorTotalComissao;
+            return Math.Round(valorTotalComissao, 2);
         }
 
         public Vendedor[] listarVendedores()

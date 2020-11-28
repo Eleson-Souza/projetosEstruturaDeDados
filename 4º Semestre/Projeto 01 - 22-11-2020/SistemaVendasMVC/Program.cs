@@ -63,11 +63,11 @@ namespace SistemaVendasMVC
                         if(vendedorEncontrado.Id != -1)
                         {
                             Console.WriteLine("\nDados do Vendedor encontrado (mensal):");
-                            Console.WriteLine("ID: {0}", vendedorEncontrado.Id);
-                            Console.WriteLine("Nome: {0}", vendedorEncontrado.Nome);
-                            Console.WriteLine("Valor total vendas: R$ {0}", vendedorEncontrado.valorVendas());
-                            Console.WriteLine("Valor comissão: R$ {0}", vendedorEncontrado.valorComissao());
-                            Console.WriteLine("Valor médio das vendas diárias: {0}");
+                            Console.WriteLine("ID............................: {0}", vendedorEncontrado.Id);
+                            Console.WriteLine("Nome..........................: {0}", vendedorEncontrado.Nome);
+                            Console.WriteLine("Valor total vendas............: R$ {0}", vendedorEncontrado.valorVendas());
+                            Console.WriteLine("Valor comissão................: R$ {0}", vendedorEncontrado.valorComissao());
+                            Console.WriteLine("Valor médio das vendas diárias: R$ {0}", vendedorEncontrado.ValorMedioDiario());
                         } else
                         {
                             Console.WriteLine("\nVendedor não encontrado!");
@@ -85,7 +85,7 @@ namespace SistemaVendasMVC
                             Console.WriteLine("\nVendedor excluído com sucesso!");
                         } else
                         {
-                            Console.WriteLine("\nVendedor não excluído, ou não existe esse vendedor ou o mesmo possui vendas em seu nome!");
+                            Console.WriteLine("\nVendedor não excluído! Ou não existe esse vendedor ou o mesmo possui vendas em seu nome!");
                         }
                         break;
                     case 4:
@@ -129,11 +129,22 @@ namespace SistemaVendasMVC
                         {
                             if(v != null)
                             {
-                                Console.WriteLine("ID: {0}", v.Id);
-                                Console.WriteLine("Nome: {0}", v.Nome);
+                                Console.WriteLine("ID............: {0}", v.Id);
+                                Console.WriteLine("Nome..........: {0}", v.Nome);
+
+                                vendedorEncontrado = vendedores.searchVendedor(new Vendedor(v.Id, "", 0.00, new Venda[31]));
+
+                                Console.WriteLine("Valor Total...: R$ {0}", vendedorEncontrado.valorVendas());
+                                Console.WriteLine("Valor Comissão ({0}%): R$ {1}", vendedorEncontrado.PercComissao,vendedorEncontrado.valorComissao());
                                 Console.WriteLine();
                             }
                         }
+
+                        Console.WriteLine("-------------------------------------------------------------");
+                        Console.WriteLine("TOTALIZAÇÃO DE TODAS AS VENDAS (DE TODOS OS VENDEDORES)");
+                        Console.WriteLine("-------------------------------------------------------------");
+                        Console.WriteLine("Valor Total Vendas...: R$ {0}", vendedores.valorVendas());
+                        Console.WriteLine("Valor Total Comissões: R$ {0}", vendedores.valorComissao());
                         break;
                     default:
                         Console.WriteLine("COMANDO INVÁLIDO, TENTE NOVAMENTE!");
