@@ -18,7 +18,7 @@ namespace SistemaVendasMVC
 
         public Venda() : this(0, 0.00)
         { }
-
+        
         // setters e getters
         public int Qtde 
         { 

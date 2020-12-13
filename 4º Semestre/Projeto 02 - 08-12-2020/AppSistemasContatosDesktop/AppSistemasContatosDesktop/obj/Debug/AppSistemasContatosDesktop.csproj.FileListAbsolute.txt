@@ -1,0 +1,10 @@
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\bin\Debug\AppSistemasContatosDesktop.exe.config
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\bin\Debug\AppSistemasContatosDesktop.exe
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\bin\Debug\AppSistemasContatosDesktop.pdb
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.csprojAssemblyReference.cache
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.Agenda.resources
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.Properties.Resources.resources
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.csproj.GenerateResource.cache
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.csproj.CoreCompileInputs.cache
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.exe
+C:\Users\Eleson\source\repos\AppSistemasContatosDesktop\AppSistemasContatosDesktop\obj\Debug\AppSistemasContatosDesktop.pdb
