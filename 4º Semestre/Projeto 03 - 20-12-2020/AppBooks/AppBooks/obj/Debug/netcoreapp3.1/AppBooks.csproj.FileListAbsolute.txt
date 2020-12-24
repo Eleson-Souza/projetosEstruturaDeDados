@@ -1,0 +1,13 @@
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\bin\Debug\netcoreapp3.1\AppBooks.exe
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\bin\Debug\netcoreapp3.1\AppBooks.deps.json
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\bin\Debug\netcoreapp3.1\AppBooks.runtimeconfig.json
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\bin\Debug\netcoreapp3.1\AppBooks.runtimeconfig.dev.json
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\bin\Debug\netcoreapp3.1\AppBooks.dll
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\bin\Debug\netcoreapp3.1\AppBooks.pdb
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.csprojAssemblyReference.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.AssemblyInfoInputs.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.AssemblyInfo.cs
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.csproj.CoreCompileInputs.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.dll
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.pdb
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\3º Semestre\Estrutura de Dados I\Projetos GitHub\4º Semestre\Projeto 03 - 20-12-2020\AppBooks\AppBooks\obj\Debug\netcoreapp3.1\AppBooks.genruntimeconfig.cache
