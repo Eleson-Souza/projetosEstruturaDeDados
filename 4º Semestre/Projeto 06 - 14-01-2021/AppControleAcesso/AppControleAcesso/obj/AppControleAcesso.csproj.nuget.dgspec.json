@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Eleson\\Google Drive\\Faculdade ADS - IFSP Cubatão\\4º Semestre\\Estrutura de Dados II\\Projetos GitHub\\4º Semestre\\Projeto 06 - 14-01-2021\\AppControleAcesso\\AppControleAcesso\\AppControleAcesso.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Eleson\\Google Drive\\Faculdade ADS - IFSP Cubatão\\4º Semestre\\Estrutura de Dados II\\Projetos GitHub\\4º Semestre\\Projeto 06 - 14-01-2021\\AppControleAcesso\\AppControleAcesso\\AppControleAcesso.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Eleson\\Google Drive\\Faculdade ADS - IFSP Cubatão\\4º Semestre\\Estrutura de Dados II\\Projetos GitHub\\4º Semestre\\Projeto 06 - 14-01-2021\\AppControleAcesso\\AppControleAcesso\\AppControleAcesso.csproj",
+        "projectName": "AppControleAcesso",
+        "projectPath": "C:\\Users\\Eleson\\Google Drive\\Faculdade ADS - IFSP Cubatão\\4º Semestre\\Estrutura de Dados II\\Projetos GitHub\\4º Semestre\\Projeto 06 - 14-01-2021\\AppControleAcesso\\AppControleAcesso\\AppControleAcesso.csproj",
+        "packagesPath": "C:\\Users\\Eleson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eleson\\Google Drive\\Faculdade ADS - IFSP Cubatão\\4º Semestre\\Estrutura de Dados II\\Projetos GitHub\\4º Semestre\\Projeto 06 - 14-01-2021\\AppControleAcesso\\AppControleAcesso\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eleson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
