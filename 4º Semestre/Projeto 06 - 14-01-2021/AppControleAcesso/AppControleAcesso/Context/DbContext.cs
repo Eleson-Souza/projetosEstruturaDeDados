@@ -18,6 +18,7 @@ namespace AppControleAcesso.Models
         public virtual DbSet<Ambientes> Ambientes { get; set; }
         public virtual DbSet<Logs> Logs { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<UsuariosAmbientes> UsuariosAmbientes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -34,9 +35,6 @@ namespace AppControleAcesso.Models
             {
                 entity.ToTable("ambientes");
 
-                entity.HasIndex(e => e.UsuariosId)
-                    .HasName("fk_usuario_ambientes");
-
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
                     .HasColumnType("int(11)");
@@ -45,11 +43,6 @@ namespace AppControleAcesso.Models
                     .IsRequired()
                     .HasColumnName("nome")
                     .HasMaxLength(60);
-
-                entity.Property(e => e.UsuariosId)
-                    .HasColumnName("usuarios_id")
-                    .HasColumnType("int(11)")
-                    .HasDefaultValueSql("'NULL'");
             });
 
             modelBuilder.Entity<Logs>(entity =>
@@ -58,6 +51,9 @@ namespace AppControleAcesso.Models
 
                 entity.HasIndex(e => e.AmbientesId)
                     .HasName("fk_ambiente_logs");
+
+                entity.HasIndex(e => e.UsuarioId)
+                    .HasName("fk_logs_usuarios_usuario_id");
 
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
@@ -74,7 +70,11 @@ namespace AppControleAcesso.Models
 
                 entity.Property(e => e.TipoAcesso)
                     .HasColumnName("tipo_acesso")
-                    .HasColumnType("tinyint(4)");
+                    .HasColumnType("int(1)");
+
+                entity.Property(e => e.UsuarioId)
+                    .HasColumnName("usuario_id")
+                    .HasColumnType("int(11)");
             });
 
             modelBuilder.Entity<Usuarios>(entity =>
@@ -89,6 +89,29 @@ namespace AppControleAcesso.Models
                     .IsRequired()
                     .HasColumnName("nome")
                     .HasMaxLength(60);
+            });
+
+            modelBuilder.Entity<UsuariosAmbientes>(entity =>
+            {
+                entity.ToTable("usuarios_ambientes");
+
+                entity.HasIndex(e => e.AmbienteId)
+                    .HasName("fk_ambiente_id");
+
+                entity.HasIndex(e => e.UsuarioId)
+                    .HasName("fk_usuario_id");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("id")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.AmbienteId)
+                    .HasColumnName("ambiente_id")
+                    .HasColumnType("int(11)");
+
+                entity.Property(e => e.UsuarioId)
+                    .HasColumnName("usuario_id")
+                    .HasColumnType("int(11)");
             });
 
             OnModelCreatingPartial(modelBuilder);

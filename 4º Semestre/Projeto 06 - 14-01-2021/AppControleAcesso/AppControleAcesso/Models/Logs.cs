@@ -7,7 +7,8 @@ namespace AppControleAcesso.Models
     {
         public int Id { get; set; }
         public DateTime DataAcesso { get; set; }
-        public byte TipoAcesso { get; set; }
+        public int TipoAcesso { get; set; }
         public int? AmbientesId { get; set; }
+        public int UsuarioId { get; set; }
     }
 }

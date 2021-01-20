@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace AppControleAcesso.Models
 {
-    public partial class Ambientes
+    public partial class UsuariosAmbientes
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public int UsuarioId { get; set; }
+        public int AmbienteId { get; set; }
     }
 }

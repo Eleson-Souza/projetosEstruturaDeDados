@@ -18,6 +18,7 @@ namespace AppControleAcesso2
             try
             {
                 context.Usuarios.Add(usuario);
+                context.SaveChanges();
                 Console.WriteLine("Usuario inserido com sucesso!");
             }
             catch (Exception)

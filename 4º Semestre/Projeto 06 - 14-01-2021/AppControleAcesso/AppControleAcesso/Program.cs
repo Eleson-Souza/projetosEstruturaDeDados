@@ -1,42 +1,62 @@
-﻿using System;
+﻿using AppControleAcesso.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
-using AppControleAcesso.Controllers;
-using AppControleAcesso.Models;
 
 namespace AppControleAcesso
 {
     class Program
     {
-        private DbContext _context;
-
-        public Program(DbContext context)
-        {
-            _context = context;
-        }
 
         static void Main(string[] args)
         {
-            using (var context2 = new DbContext())
-            {
-                var usuario = new Usuarios()
-                {
-                    Id = 1,
-                    Nome = "Eleson"
-                };
-
-                context2.Usuarios.Add(usuario);
-            }
-
             try
             {
                 DbContext context = new DbContext();
-                UsuariosController usuariosController = new UsuariosController();
 
                 string opcao, nome;
                 int id;
 
                 Cadastro cadastros = new Cadastro();
+
+
+                Console.WriteLine("\nRealizando download dos dados...\n");
+                Thread.Sleep(2000);
+
+                var users = context.Usuarios.ToList();
+                var ambientes = context.Ambientes.ToList();
+                var logs = context.Logs.ToList();
+                var usersAmbientes = context.UsuariosAmbientes.ToList();
+
+                foreach (var user in users)
+                {
+                    List<Ambiente> ambsUser = new List<Ambiente>();
+                    foreach (var amb in ambientes)
+                    {
+                        Queue<Log> logsAmbUser = new Queue<Log>();
+                        foreach (var log in logs)
+                        {
+                            if (log.UsuarioId == user.Id)
+                            {
+                                logsAmbUser.Enqueue(new Log(log.DataAcesso, new Usuario(user.Id, user.Nome, new List<Ambiente> { }), log.TipoAcesso == 1 ? true : false));
+                            }
+                        }
+
+                        var ambs = usersAmbientes.Where(x => x.UsuarioId == user.Id && x.AmbienteId == amb.Id);
+
+                        if (ambs.Count() > 0)
+                        {
+                            ambsUser.Add(new Ambiente(amb.Id, amb.Nome, logsAmbUser));
+                        }
+
+                        cadastros.Ambientes.Add(new Ambiente(amb.Id, amb.Nome, logsAmbUser));
+                    }
+
+                    cadastros.Usuarios.Add(new Usuario(user.Id, user.Nome, ambsUser));
+                }
+
+
 
                 do
                 {
@@ -65,6 +85,14 @@ namespace AppControleAcesso
 
                             Console.Write("\nID..: ");
                             id = int.Parse(Console.ReadLine());
+
+                            if (cadastros.Ambientes.Find(amb => amb.Id == id) != null)
+                            {
+                                Console.WriteLine("\nO Id informado já existe! Tente outro!\n");
+                                Thread.Sleep(1500);
+                                break;
+                            }
+
                             Console.Write("Nome: ");
                             nome = Console.ReadLine();
 
@@ -118,6 +146,14 @@ namespace AppControleAcesso
 
                             Console.Write("\nID..: ");
                             id = int.Parse(Console.ReadLine());
+
+                            if (cadastros.Usuarios.Find(user => user.Id == id) != null)
+                            {
+                                Console.WriteLine("\nO Id informado já existe! Tente outro!\n");
+                                Thread.Sleep(1500);
+                                break;
+                            }
+
                             Console.Write("Nome: ");
                             nome = Console.ReadLine();
 
@@ -308,7 +344,7 @@ namespace AppControleAcesso
                                     {
                                         ambienteEncontrado.Logs.Enqueue(new Log(DateTime.Now, usuarioEncontrado, false));
                                         Console.WriteLine("\nEste usuário não tem acesso a esse ambiente ou ele não existe!\n");
-                                    }                                    
+                                    }
                                 }
                                 else
                                 {
@@ -385,23 +421,70 @@ namespace AppControleAcesso
 
                 } while (opcao != "0");
 
-                //using (var context2 = new DbContext())
-                //{
-                //    /*foreach (var user in cadastros.Usuarios)
-                //    {*/
-                //        var usuario = new Usuarios()
-                //        {
-                //            Id = 1,
-                //            Nome = "Eleson"
-                //        };
-                //        context2.Usuarios.Add(usuario);
-                //        //usuariosController.InsertUsuario(usuario);
-                //    //}
-                //}
+                Console.WriteLine("\nRealizando backup dos dados...\n");
+
+                // limpa os campos do banco antes de inserir os valores
+                context.Usuarios.RemoveRange(context.Usuarios);
+                context.Ambientes.RemoveRange(context.Ambientes);
+                context.Logs.RemoveRange(context.Logs);
+                context.UsuariosAmbientes.RemoveRange(context.UsuariosAmbientes);
+                context.SaveChanges();
+
+                // salva os dados das listas no banco
+                foreach (var user in cadastros.Usuarios)
+                {
+                    var usuario = new Usuarios()
+                    {
+                        Id = user.Id,
+                        Nome = user.Nome
+                    };
+
+                    context.Usuarios.Add(usuario);
+                    context.SaveChanges();
+
+                    foreach (var amb in user.Ambientes)
+                    {
+                        var ambienteUsuario = new UsuariosAmbientes()
+                        {
+                            AmbienteId = amb.Id,
+                            UsuarioId = user.Id
+                        };
+
+                        context.UsuariosAmbientes.Add(ambienteUsuario);
+                        context.SaveChanges();
+                    }
+                }
+                foreach (var amb in cadastros.Ambientes)
+                {
+                    var ambiente = new Ambientes()
+                    {
+                        Id = amb.Id,
+                        Nome = amb.Nome
+                    };
+
+                    context.Ambientes.Add(ambiente);
+                    context.SaveChanges();
+
+                    foreach (var log in amb.Logs)
+                    {
+                        var logg = new Logs()
+                        {
+                            DataAcesso = log.DtAcesso,
+                            TipoAcesso = log.TipoAcesso ? 1 : 0,
+                            AmbientesId = amb.Id,
+                            UsuarioId = log.Usuario.Id
+                        };
+
+                        context.Logs.Add(logg);
+                        context.SaveChanges();
+                    }
+                }
+
+                Console.WriteLine("\nBackup realizado com sucesso!\n");
             }
             catch (Exception)
             {
-                Console.WriteLine("\nHouve um erro na aplicação, provavelmente por dados inconsistentes!\n");
+                Console.WriteLine("\nHouve um erro na aplicação, tente novamente!\n");
             }
         }
     }
