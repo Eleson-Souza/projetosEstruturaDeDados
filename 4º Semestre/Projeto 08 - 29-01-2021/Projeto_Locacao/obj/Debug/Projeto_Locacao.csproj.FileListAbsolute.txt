@@ -1,0 +1,14 @@
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\obj\Debug\Projeto_Locacao.csprojAssemblyReference.cache
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\obj\Debug\Projeto_Locacao.csproj.CoreCompileInputs.cache
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\bin\Debug\Projeto_Locacao.exe.config
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\bin\Debug\Projeto_Locacao.exe
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\bin\Debug\Projeto_Locacao.pdb
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\obj\Debug\Projeto_Locacao.exe
+C:\Users\denhe\source\repos\Projeto_Locacao\Projeto_Locacao\obj\Debug\Projeto_Locacao.pdb
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\bin\Debug\Projeto_Locacao.exe.config
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\bin\Debug\Projeto_Locacao.exe
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\bin\Debug\Projeto_Locacao.pdb
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\obj\Debug\Projeto_Locacao.csprojAssemblyReference.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\obj\Debug\Projeto_Locacao.csproj.CoreCompileInputs.cache
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\obj\Debug\Projeto_Locacao.exe
+C:\Users\Eleson\Google Drive\Faculdade ADS - IFSP Cubatão\4º Semestre\Estrutura de Dados II\Projetos GitHub\4º Semestre\Projeto 08 - 29-01-2021\Projeto_Locacao\obj\Debug\Projeto_Locacao.pdb
